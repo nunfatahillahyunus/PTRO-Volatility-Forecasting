@@ -22,7 +22,7 @@ st.set_page_config(
 # LOGO
 # =====================================================
 
-st.image(
+st.logo(
     BASE_DIR / "logo.png"
 )
 
