@@ -277,7 +277,7 @@ st.subheader(
 )
 
 st.image(
-    BASE_DIR / 'Stat\actual_vs_predicted.png',
+    BASE_DIR / 'Stat/actual_vs_predicted.png',
     use_container_width=True
 )
 
