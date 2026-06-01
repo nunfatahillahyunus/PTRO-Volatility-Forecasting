@@ -2,13 +2,17 @@
 import streamlit as st
 import pandas as pd
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 # Logo vinix dan ptro
 st.logo(
-    'logo.png'
+    BASE_DIR / 'logo.png'
 )
 
 st.sidebar.image(
-    'VINIX7.png',
+    BASE_DIR / 'VINIX7.png',
     width=150
 )
 
@@ -239,7 +243,7 @@ st.subheader(
 )
 
 st.image(
-    r'D:\python file\vinix\Tugas_Final\app\Stat\training_validation_loss.png',
+    BASE_DIR / 'Stat/training_validation_loss.png',
     use_container_width=True
 )
 
@@ -273,7 +277,7 @@ st.subheader(
 )
 
 st.image(
-    r'D:\python file\vinix\Tugas_Final\app\Stat\actual_vs_predicted.png',
+    BASE_DIR / 'Stat\actual_vs_predicted.png',
     use_container_width=True
 )
 
