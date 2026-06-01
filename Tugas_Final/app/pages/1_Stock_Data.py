@@ -6,14 +6,17 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
 
 # Logo vinix dan ptro
 st.logo(
-    'logo.png'
+    BASE_DIR / 'logo.png'
 )
 
 st.sidebar.image(
-    'VINIX7.png',
+    BASE_DIR / 'VINIX7.png',
     width=150
 )
 ##
