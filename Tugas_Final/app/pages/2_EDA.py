@@ -141,15 +141,15 @@ st.write(
 # Descriptive Statistics
 
 data_train_scaled = pd.read_csv(
-    BASE_DIR / 'CSV\data_train_scaled.csv'
+    BASE_DIR / 'CSV/data_train_scaled.csv'
 )
 
 data_val_scaled = pd.read_csv(
-    BASE_DIR / 'CSV\data_val_scaled.csv'
+    BASE_DIR / 'CSV/data_val_scaled.csv'
 )
 
 data_test_scaled = pd.read_csv(
-    BASE_DIR / 'CSV\data_test_scaled.csv'
+    BASE_DIR / 'CSV/data_test_scaled.csv'
 )
 
 st.subheader(
@@ -210,7 +210,7 @@ st.subheader(
 )
 
 st.image(
-    BASE_DIR / 'Stat\time_series_plot.png',
+    BASE_DIR / 'Stat/time_series_plot.png',
     use_container_width=True
 )
 
