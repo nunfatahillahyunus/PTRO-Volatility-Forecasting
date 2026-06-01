@@ -16,11 +16,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Logo vinix dan ptro
 st.logo(
-    BASE DIR / 'logo.png'
+    BASE_DIR / 'logo.png'
 )
 
 st.sidebar.image(
-    BASE DIR / 'VINIX7.png',
+    BASE_DIR / 'VINIX7.png',
     width=150
 )
 
