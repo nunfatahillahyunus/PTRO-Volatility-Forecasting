@@ -348,17 +348,17 @@ st.subheader(
 
 # Model
 model = load_model(
-    BASE DIR / 'PTRO_LSTM_Volatility.h5',
+    BASE_DIR / 'PTRO_LSTM_Volatility.h5',
     compile=False
 )
 
 # Scaler
 scaler_X = joblib.load(
-    BASE DIR / 'PTRO_scaler_X.pkl'
+    BASE_DIR / 'PTRO_scaler_X.pkl'
 )
 
 scaler_Y = joblib.load(
-    BASE DIR / 'PTRO_scaler_Y.pkl'
+    BASE_DIR / 'PTRO_scaler_Y.pkl'
 )
 
 #Variabel
