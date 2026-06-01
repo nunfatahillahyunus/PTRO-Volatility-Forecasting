@@ -10,13 +10,17 @@ import plotly.graph_objects as go
 import joblib
 from tensorflow.keras.models import load_model
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 # Logo vinix dan ptro
 st.logo(
-    'logo.png'
+    BASE DIR / 'logo.png'
 )
 
 st.sidebar.image(
-    'VINIX7.png',
+    BASE DIR / 'VINIX7.png',
     width=150
 )
 
@@ -344,17 +348,17 @@ st.subheader(
 
 # Model
 model = load_model(
-    r'D:\python file\vinix\Tugas_Final\app\PTRO_LSTM_Volatility.h5',
+    BASE DIR / 'PTRO_LSTM_Volatility.h5',
     compile=False
 )
 
 # Scaler
 scaler_X = joblib.load(
-    r'D:\python file\vinix\Tugas_Final\app\PTRO_scaler_X.pkl'
+    BASE DIR / 'PTRO_scaler_X.pkl'
 )
 
 scaler_Y = joblib.load(
-    r'D:\python file\vinix\Tugas_Final\app\PTRO_scaler_Y.pkl'
+    BASE DIR / 'PTRO_scaler_Y.pkl'
 )
 
 #Variabel
