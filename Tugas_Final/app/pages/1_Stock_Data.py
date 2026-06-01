@@ -8,7 +8,7 @@ import seaborn as sns
 
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Logo vinix dan ptro
 st.logo(
