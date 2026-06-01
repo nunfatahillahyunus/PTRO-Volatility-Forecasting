@@ -3,6 +3,10 @@
 # =====================================================
 
 import streamlit as st
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
 
 # =====================================================
 # PAGE CONFIG
@@ -18,12 +22,12 @@ st.set_page_config(
 # LOGO
 # =====================================================
 
-st.logo(
-    'logo.png'
+st.image(
+    BASE_DIR / "logo.png"
 )
 
 st.sidebar.image(
-    'VINIX7.png',
+    BASE_DIR / 'VINIX7.png',
     width=150
 )
 
