@@ -2,13 +2,17 @@
 import streamlit as st
 import pandas as pd
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 # Logo vinix dan ptro
 st.logo(
-    'logo.png'
+    BASE_DIR / 'logo.png'
 )
 
 st.sidebar.image(
-    'VINIX7.png',
+    BASE_DIR / 'VINIX7.png',
     width=150
 )
 
