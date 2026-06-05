@@ -2,6 +2,7 @@
 
 Web application for analyzing and forecasting the volatility of **PT Petrosea Tbk (PTRO)** stock using **Long Short-Term Memory (LSTM)**.
 
+Link: https://ptro-volatility-forecasting-gbggvoddyppifif4bcbl5k.streamlit.app/ 
 ## Overview
 
 This project was developed to support stock risk analysis by modeling historical volatility patterns of PTRO.  
