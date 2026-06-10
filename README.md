@@ -37,7 +37,6 @@ Data period used in the project:
 Features used:
 
 - `Close`
-- `Volume`
 - `Log Return`
 - `21-day Rolling Volatility`
 
